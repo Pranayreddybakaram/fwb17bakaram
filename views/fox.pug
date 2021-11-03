@@ -2,5 +2,30 @@ extends layout
 
 block content
   h1= title
-  p Search results fox #{title} 
- 
+  p Search results Monkey  
+  p 
+  div(class="container-fluid")
+        div(class="row")
+            -
+                let Monkey = [
+                    {
+                        "name": "Satish",
+                        "color": "black" ,
+                        "weight": 30
+                    },
+                    {
+                        "name": "harsha",
+                        "color": "brown" ,
+                        "weight": 25
+                    },
+                    {
+                        "name": "pranay",
+                        "color": "white" ,
+                        "weight": 40
+                    },                   
+                ]
+            each v,index in Monkey 
+                div(class="col-sm-2" ) #{v.name}
+                div(class="col-sm-2" ) #{v.color}
+                div(class="col-sm-2" ) #{v.weight}
+

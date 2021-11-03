@@ -4,4 +4,4 @@ this is README file
 
 
 https://fwb17bakaram.herokuapp.com/
-class fox
+class fox(name(String),weight(int),color(string))
